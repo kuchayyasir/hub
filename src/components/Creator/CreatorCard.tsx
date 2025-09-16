@@ -1,6 +1,6 @@
-import React from 'react';
-import { Creator } from '../../types';
-import { Users, DollarSign, CheckCircle } from 'lucide-react';
+import React from "react";
+import { Creator } from "../../types";
+import { Users, DollarSign, CheckCircle } from "lucide-react";
 
 interface CreatorCardProps {
   creator: Creator;
@@ -28,7 +28,7 @@ const CreatorCard: React.FC<CreatorCardProps> = ({ creator, onClick }) => {
           />
         </div>
       </div>
-      
+
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">
           <h3 className="text-xl font-semibold text-gray-900 flex items-center">
@@ -38,10 +38,12 @@ const CreatorCard: React.FC<CreatorCardProps> = ({ creator, onClick }) => {
             )}
           </h3>
         </div>
-        
-        <p className="text-sm text-teal-600 font-medium mb-2">{creator.category}</p>
+
+        <p className="text-sm text-teal-600 font-medium mb-2">
+          {creator.category}
+        </p>
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">{creator.bio}</p>
-        
+
         <div className="flex items-center justify-between text-sm">
           <div className="flex items-center text-gray-500">
             <Users className="w-4 h-4 mr-1" />
